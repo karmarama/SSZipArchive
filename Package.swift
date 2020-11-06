@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "ZipArchive",
+    name: "SSZipArchive",
     platforms: [
         .iOS(.v9),
         .tvOS(.v9),
@@ -11,11 +11,11 @@ let package = Package(
         .watchOS(.v2),
     ],
     products: [
-        .library(name: "ZipArchive", targets: ["ZipArchive"]),
+        .library(name: "SSZipArchive", targets: ["SSZipArchive"]),
     ],
     targets: [
         .target(
-            name: "ZipArchive",
+            name: "SSZipArchive",
             path: "SSZipArchive",
             cSettings: [
                 .define("HAVE_INTTYPES_H"),
